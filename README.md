@@ -73,19 +73,23 @@ plan.
 
 ```
 security-review-speckit/
-├── SKILL.md     # the skill: instructions, review tracks, finding format, SpecKit templates
-├── README.md    # this file
-└── LICENSE      # MIT
+├── .claude-plugin/plugin.json                # plugin manifest
+├── skills/security-review-speckit/SKILL.md   # the skill: instructions, review tracks, finding format, SpecKit templates
+├── README.md                                 # this file
+└── LICENSE                                   # MIT
 ```
 
 ## Quick start
 
-1. **Clone it** into your skills directory:
+1. **Install it** as a plugin:
 
-   ```bash
-   git clone https://github.com/trackmind-ai/security-review-speckit.git \
-     .claude/skills/security-review-speckit
+   ```text
+   /plugin marketplace add trackmind-ai/marketplace
+   /plugin install security-review-speckit@trackmind
    ```
+
+   Or use it as a plain skill: clone the repo and copy `skills/security-review-speckit`
+   into your project's `.claude/skills/` folder.
 
 2. **Invoke it** in Claude with a request like:
 
@@ -108,8 +112,19 @@ security-review-speckit/
 3. **Read the report**, triage Critical/High first, and re-run with "implement fixes" mode when
    you're ready for remediation.
 
-See [SKILL.md](SKILL.md) for the full request template, per-track modules, finding format, and
+See [SKILL.md](skills/security-review-speckit/SKILL.md) for the full request template, per-track modules, finding format, and
 severity rules.
+
+## What this plugin runs, sends and fetches
+
+Nothing hidden. This plugin is a single skill: Markdown instructions only.
+
+- **No hooks, no MCP servers, no scripts, no installs.** It adds no executable code.
+- **No network access of its own.** It does not fetch anything or send your code anywhere.
+  The review is done by Claude reading your files in the current conversation, the same as
+  any file you ask it to read.
+- **Read-only by default.** It reads the project to produce a report. It only edits files
+  if you explicitly ask it to implement fixes.
 
 ## License
 
