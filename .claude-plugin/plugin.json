@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": { "name": "Trackmind", "email": "oss@trackmind.com" },
-  "homepage": "https://github.com/trackmind-ai/security-review-speckit",
-  "repository": "https://github.com/trackmind-ai/security-review-speckit",
+  "homepage": "https://github.com/trackmind-ai/spec-security-review",
+  "repository": "https://github.com/trackmind-ai/spec-security-review",
   "keywords": ["security", "sast", "sca", "owasp", "code-review", "xss", "supply-chain", "llm-security"]
 }

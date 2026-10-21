@@ -72,7 +72,7 @@ plan.
 ## Repository structure
 
 ```
-security-review-speckit/
+spec-security-review/
 ├── .claude-plugin/plugin.json                # plugin manifest
 ├── skills/spec-security-review/SKILL.md      # the skill: instructions, review tracks, finding format, spec templates
 ├── README.md                                 # this file
