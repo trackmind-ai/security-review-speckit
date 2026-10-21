@@ -1,15 +1,15 @@
 ---
-name: security-review-speckit
+name: spec-security-review
 description: Performs reusable SAST, SCA, authorization, XSS, supply-chain, and AI/LLM security reviews. Use when the user asks for a security audit, SCA, SAST, access-control review, XSS review, dependency review, OWASP review, release security assessment, or secure remediation plan.
 ---
 
-# Security Review SpecKit
+# Spec Security Review
 
 ## Purpose
 
 Use this skill to perform a structured, evidence-based security review for any project or task. Default to read-only analysis unless the user explicitly asks to implement fixes.
 
-For a ready-to-fill request template, backend/frontend/SCA modules, quick prompt, and severity rules, see the **SpecKit Templates & Modules** section at the end of this file.
+For a ready-to-fill request template, backend/frontend/SCA modules, quick prompt, and severity rules, see the **Spec Templates & Modules** section at the end of this file.
 
 ## First Steps
 
@@ -246,9 +246,9 @@ If something is skipped, the report must explicitly explain:
 
 ---
 
-# SpecKit Templates & Modules
+# Spec Templates & Modules
 
-Use this SpecKit to request a reusable security audit for any repository, release, PR, or task.
+Use these templates to request a reusable security audit for any repository, release, PR, or task.
 
 ## Request Template
 
