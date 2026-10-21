@@ -1,4 +1,4 @@
-# 🛡️ security-review-speckit
+# 🛡️ spec-security-review
 
 **A drop-in Claude skill that turns any AI agent into a rigorous, evidence-based security reviewer.**
 
@@ -74,7 +74,7 @@ plan.
 ```
 security-review-speckit/
 ├── .claude-plugin/plugin.json                # plugin manifest
-├── skills/security-review-speckit/SKILL.md   # the skill: instructions, review tracks, finding format, SpecKit templates
+├── skills/spec-security-review/SKILL.md      # the skill: instructions, review tracks, finding format, spec templates
 ├── README.md                                 # this file
 └── LICENSE                                   # MIT
 ```
@@ -85,16 +85,16 @@ security-review-speckit/
 
    ```text
    /plugin marketplace add trackmind-ai/marketplace
-   /plugin install security-review-speckit@trackmind
+   /plugin install spec-security-review@trackmind
    ```
 
-   Or use it as a plain skill: clone the repo and copy `skills/security-review-speckit`
+   Or use it as a plain skill: clone the repo and copy `skills/spec-security-review`
    into your project's `.claude/skills/` folder.
 
 2. **Invoke it** in Claude with a request like:
 
    ```
-   Use the security-review-speckit skill.
+   Use the spec-security-review skill.
 
    Project: <name>
    Repos: <repositories>
@@ -112,7 +112,7 @@ security-review-speckit/
 3. **Read the report**, triage Critical/High first, and re-run with "implement fixes" mode when
    you're ready for remediation.
 
-See [SKILL.md](skills/security-review-speckit/SKILL.md) for the full request template, per-track modules, finding format, and
+See [SKILL.md](skills/spec-security-review/SKILL.md) for the full request template, per-track modules, finding format, and
 severity rules.
 
 ## What this plugin runs, sends and fetches

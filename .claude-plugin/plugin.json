@@ -1,5 +1,5 @@
 {
-  "name": "security-review-speckit",
+  "name": "spec-security-review",
   "description": "Structured, evidence-based security reviews: SAST, SCA, authorization, XSS, supply-chain and AI/LLM tracks, with exact files, lines, source-to-sink traces, impact and remediation. Read-only by default.",
   "version": "0.1.0",
   "license": "MIT",
