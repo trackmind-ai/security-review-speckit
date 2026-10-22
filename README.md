@@ -115,6 +115,30 @@ spec-security-review/
 See [SKILL.md](skills/spec-security-review/SKILL.md) for the full request template, per-track modules, finding format, and
 severity rules.
 
+## Try it
+
+Three prompts to start with:
+
+1. "Use the spec-security-review skill on the `payments-api` repo, backend authorization
+   review only. Return exact files, lines and remediation."
+2. "Use the spec-security-review skill for a frontend XSS source-to-sink review of `web/`."
+3. "Use the spec-security-review skill for a dependency and supply-chain review of this
+   repository before the release."
+
+## Troubleshooting
+
+- **The skill is not used.** Name it in your request ("Use the spec-security-review skill")
+  and check `/plugin` shows `spec-security-review` as installed and enabled.
+- **The report is too broad or too long.** Name one track (authorization, XSS, dependencies
+  or AI/LLM) and one repository or folder per request.
+- **It proposed edits you did not want.** It is read-only unless you ask it to implement
+  fixes. Re-run without the word "implement".
+
+## Support and security
+
+Report problems at <https://github.com/trackmind-ai/spec-security-review/issues>. For a
+security vulnerability, follow [SECURITY.md](SECURITY.md).
+
 ## What this plugin runs, sends and fetches
 
 Nothing hidden. This plugin is a single skill: Markdown instructions only.
