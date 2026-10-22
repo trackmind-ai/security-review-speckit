@@ -76,7 +76,7 @@ spec-security-review/
 ├── .claude-plugin/plugin.json                # plugin manifest
 ├── skills/spec-security-review/SKILL.md      # the skill: instructions, review tracks, finding format, spec templates
 ├── README.md                                 # this file
-└── LICENSE                                   # MIT
+└── LICENSE                                   # GPL-3.0-or-later
 ```
 
 ## Quick start
@@ -152,4 +152,7 @@ Nothing hidden. This plugin is a single skill: Markdown instructions only.
 
 ## License
 
-[MIT](LICENSE) © 2026 Trackmind
+[GNU GPL v3 or later](LICENSE) © 2026 Trackmind
+
+Earlier versions were released under the MIT License and stay available under it. The reviews
+this skill produces are yours; the license covers the skill itself, not its output.

@@ -2,7 +2,7 @@
   "name": "spec-security-review",
   "description": "Structured, evidence-based security reviews: SAST, SCA, authorization, XSS, supply-chain and AI/LLM tracks, with exact files, lines, source-to-sink traces, impact and remediation. Read-only by default.",
   "version": "0.1.0",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "author": { "name": "Trackmind", "email": "oss@trackmind.com" },
   "homepage": "https://github.com/trackmind-ai/spec-security-review",
   "repository": "https://github.com/trackmind-ai/spec-security-review",
